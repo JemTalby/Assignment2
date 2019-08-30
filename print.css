@@ -1,0 +1,48 @@
+nav, #youtube, #fitnesswellbeing, video, .mov, footer img, div.recipe img,  img.centered, #logo{	
+	display: none;	/*--- when printed display none of these tags,  id or classes   */
+}
+
+body{	/*--- body changed when printed   */
+	font-size: 10pt;									/*--- font size to 10pt   */
+	color: #000000;										/*--- changes colour to all black  */
+}
+
+ul{	/*--- unordered lists when printed   */
+	font-size: 8pt;										/*--- font size changed to 8pt   */
+	color: #000000;										/*--- changes colour to all black   */
+}
+
+#masthead{	/*--- masthead when printed   */
+	float:none;												/*--- changes float to none    */
+	width:1000px;												/*--- changes width   */
+	border-style: none;									/*--- changes border style to none   */
+}
+
+#tips{	/*--- tips when printed   */
+	float:none;												/*---  changes float to none  */
+	width:1000px;											/*---  changes width   */
+	border-style: none;									/*--- changes border style to none   */
+	position:relative;									/*--- position to relative    */
+}
+
+#contentright{	/*--- contentright when printed   */
+	float:none;												/*--- changes float to none   */
+	width:1000px;											/*--- changes width   */
+	border-style: none;										/*--- changes border style to none   */
+	margin-right: 0px;										/*--- margin right set to 0px    */
+	margin-left:48px;										/*--- margin left set to 48px   */
+}
+
+.contentwhole{	/*--- contentwhole class when printed    */
+	float:none;												/*--- changes float to none    */
+	width:1000px;											/*--- changes width   */
+	border-style: none;										/*--- changes border style to none   */
+	position:relative;										/*--- position set to relative  */
+}
+
+#footer{	/*--- footer id when printed   */
+	float:none;												/*--- changes float to none   */
+	width:1000px;											/*--- changes width   */
+	border-style: none;										/*--- changes border style to none   */
+	position:relative;										/*--- position set to relative   */
+}

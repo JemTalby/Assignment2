@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<title>Assignment One</title> <!--gives website a title-->
+	<link rel="stylesheet" href="layout.css"> <!-- applies the layout.css stylesheet to teh webpage-->
+	<link	rel="stylesheet"	href="print.css"	media="print"> <!-- applies the print.css stylesheet to the webpage for print-->
+	<!--[if It IE 9]>
+	<script scr="http://html5shiv.googlecode.com/svn/trunk/html5.js">
+	</script>
+	<![endif]-->
+</head>
+
+<body>
+<div id="wrapper"> <!-- This applies the overall webpage wrapper ID from the CSS to the entire page-->
+<!--This sets up the header-->
+	<header id="masthead">	<!-- masthead is the ID for the top header CSS-->
+		<img id="logo" src= "images/logo.gif" alt= "Logo" width="100" height="100" /> <!-- This inserts the logo into the webapge, using a custoom logo Id css-->
+		<h1 id="top" style="float; left;">::Living a Healthy and Active Lifestyle::</h1><!-- header for website. Major header so use h1 tag-->
+	</header><!-- ends the header-->
+
+
+<!--This sets up the navigation links-->
+<nav id="nav"> <!-- nav is the id for the navigation section throughout the website -->
+	<h2>Navigation links</h2><!-- navigation links header. h2 is used -->
+		<ul> <!-- opens an unordered bulleted list. All below are hyperlinks to different sections in the site-->
+		<li><a href="physicalactivity.html" title="Physical Activity">Physical Activity</a></li>
+		<li><a href="sedentarybehaviour.html" title="Sedentary Behaviour">Sedentary Behaviour</a></li>
+		<li><a href="nutrition.html" title="Nutrition">Nutrition</a></li>
+		<li><a href="externallinks.html" title="External Links"><mark><b> External Links </b></mark></a></li><!-- this action both bolds and highlights the selected webpage-->
+		<li><a href="mapofsite.html" title="Map of Site"> Map of Site </a></li>
+		<li><a href="index.html" title="Home"> Home </a></li>
+	</ul>
+</nav>
+<!-- This sets up the main article-->
+	<article class="contentwhole"><!-- creates article with contentwhole class -->
+		<h2 class="header2">Links to other websites</h2><!-- creates header with header2 class -->
+		<p class="centertext"><!--  creates paragraph with centertext class applied-->
+		It is highly recommened that you checkout some of these external websites for further information. Click on the pictures to go to the respective website.
+		</p><!-- ends paragraph -->
+		<div class="recipe"><!-- id class recipe applied-->
+		<a href= "http://gofor2and5.com.au/"> <!-- this makes all the pictures in below clickable. Each one is an external link to each of the 3 websites -->
+			<img src= "images/2fruit5veges.jpg" title= "Two Fruit and 5 Vegetables" alt="http://gofor2and5.com.au/Portals/0/Skins/homeTemplate//images/logo.jpg" width="300" height="300"></a> <!-- inserts image -->
+		<div class= "caption"> 2 Fruit 5 Veg</div><!-- div class caption applied to text -->
+		</div><!-- ends div -->
+		<div class="recipe"><!-- id class recipe applied-->
+		<a href= "http://www.beactive.wa.gov.au/"><!-- this makes all the pictures in below clickable. Each one is an external link to each of the 3 websites -->
+			<img src= "images/beactive.jpg" title= "Be Active" alt= "http://www.beactive.wa.gov.au/assets/images/logos/PATF-logo.png" width="300" height="300" ></a><!-- inserts image -->
+		<div class= "caption"> Be Active Website</div><!-- div class caption applied to text -->
+		</div><!-- ends div -->
+		<div class="recipe"><!-- id class recipe applied-->
+		<a href= "http://www.health.gov.au/internet/main/publishing.nsf/Content/health-pubhlth-strateg-phys-act-guidelines/$File/Brochures_PAG_5-12yrs.pdf"><!-- this makes all the pictures in below clickable. Each one is an external link to each of the 3 websites -->
+			<img src= "images/nutritionguidelines.jpg" Title= "Nutrition Guidelines of WA" alt="http://www.health.gov.au/" width="300" height="300"></a><!-- inserts image -->
+		<div class= "caption"> Nutrition guidelines to WA</div><!-- div class caption applied to text -->
+		</div><!-- ends div -->
+</article><!-- ends article -->
+
+<!-- This sets up the footer and places it at the bottom of the page-->
+	<footer id="footer"><!-- Footer Id tag from CSS -->
+		<p><!-- setups new paragraph -->
+    <a href="http://jigsaw.w3.org/css-validator/check/referer" style="float:right; margin: 5px 5px;"><!-- places in the CSS logo-->
+        <img style="border:0;width:88px;height:31px"
+            src="http://jigsaw.w3.org/css-validator/images/vcss"
+            alt="Valid CSS!" />
+    </a><!--ends the hyperlink -->
+		</p><!--ends the paragraph -->
+	<p><!-- begins a new paragraph-->
+	<a href="http://jigsaw.w3.org/css-validator/check/referer" style="float:right; margin: 5px 5px;"><!--places in the CSS logo -->
+    <img style="border:0;width:88px;height:31px"
+        src="http://jigsaw.w3.org/css-validator/images/vcss-blue"
+        alt="Valid CSS!" />
+    </a><!--ends the hyperlink -->
+	</p><!--ends the paragraph -->
+	<p><b>Jeremy Talbot</b>; 2015; Edith Cowan University<br></p><!--places in the footer information, bolding certain works and placing in breaks where needed -->
+	<p> Any enquiries or further information, contact the owner of this website at the link listed below</p>
+	<p><a href="mailto:jem_talbot@hotmail.com">Send Mail</a></p><!-- places in a hyperlink, which links to my e-mail-->
+	</footer><!-- ends the footer id tag-->
+</div><!-- ends the wrapper div -->
+</body><!--ends the body -->
+</html><!--ends the html -->

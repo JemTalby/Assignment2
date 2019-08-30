@@ -1,0 +1,264 @@
+/*
+Author: Jeremy Talbot
+Date: 07/09/2015
+Version: CSS Layout V.1
+
+	header, section, footer, aside, nav, article, figure {
+			display: block;
+	}
+	
+	/* HTML5 tags: tell the browser to render all HTML5 section tags as block */
+	
+	/* ---------------------GLOBAL --------------------*/
+	body{	/*--- sets the body tag up for the entire body of the webpage.   */													
+			background-color: darkblue;							/*--- setups the entire webpage background to be darkblue   */
+			font-family: Verdana, Geneva, sans-serif;			/*--- setups the entire webpages default font   */
+			color: white;										/*--- sets the entire webpage default color text   */
+		}
+	mark{	/*--- sets the mark tag, so when everything is <mark> it will have the following settings   */												
+			background-color: lightblue;						/*--- sets the <mark> tag to lightblue    */
+			color: white;										/*--- sets the <mark> tag to white font  */
+			font-weight: bold;									/*--- sets the <mark> font weight to bold  */
+		}
+		
+	div.gallery {	/*---  sets up a div called gallery  */
+			margin: 5px;										/*--- sets the margin    */
+			padding: 5px;										/*--- sets the padding   */
+			height: auto;										/*--- sets the height   */
+			width: auto;										/*--- sets the width   */
+			float: left;										/*--- sets up a float  */
+			text-align: center;									/*--- determines text alignment   */
+		}	
+
+	div.gallery img {	/*--- sets up an extension from the gallery div for images   */
+			display: inline-block;								/*--- sets the pictures to be in a block    */
+			margin: 5px;										/*--- sets the margins   */
+			border: 1px solid #ffffff;							/*--- sets the border, and gives it a solid background in white   */
+		}
+
+	div.gallery a:hover img {	/*---  sets up an extension from the gallery div for a hover extension  */
+		border: 1px solid #0000ff;								
+	}
+
+	div.desc {	/*--- sets up a div called desc "short for desciption")   */
+		  text-align: center;									/*--- sets the text alignment   */
+		  font-weight: bold;									/*--- sets the font weight   */
+		  width: 120px;											/*--- sets the width   */
+		  margin: 5px;											/*--- sets the margin  */								
+		  display:block;										/*--- sets the display to be block   */
+	}
+	
+	div.gallery img:hover{	/*--- setsup and extension from the gallery div for a hover extension   */
+		transform:scale(2);										/*--- when hovered, img will increase x2    */
+		-webkit-transform: scale(2);							
+		-o-transform:scale(2);									
+		-moz-transform: scale(2);								
+		-ms-transition: scale(2);								
+	
+		transition: 0.5s ease-in-out;							/*--- when transitioned out of hover, will go at 0.5 seconds  */
+		-webkit-transition: 0.5s ease-in-out;					
+		-o-transition: 0.5s ease-in-out;						
+		-moz-transition: 0.5s ease-in-out;						
+		-ms-transition: 0.5s ease-in-out;						
+	}
+	
+	div.recipe {	/*--- sets a new div called recipe   */
+			margin: 5px;										/*--- sets the margin   */
+			padding: 18px;										/*--- sets the padding   */
+			height: auto;										/*--- sets the height   */
+			width: auto;										/*--- sets the width   */
+			float: left;										/*--- sets the float   */
+			text-align: center;									/*--- sets the text alignment   */
+		}	
+
+	div.recipe img {	/*--- sets up an extension from recipes div for images   */
+			display: inline-block;								/*--- sets up the display to be inlined and blocked   */
+			margin: 5px;										/*--- sets the margin   */
+			border: 1px solid #ffffff;							/*--- sets the border   */
+		}
+	
+	div.recipe a{	/*--- sets the background for hyperlinks in recipe div   */
+		background-color: DodgerBlue;							/*--- sets background colour    */
+		}
+		
+	div.caption{	/*---  sets up a div called caption  */
+		display: block;											/*--- sets the display   */
+		font-weight:bold;										/*--- sets the font weight   */
+	}
+
+	/* --------------------PAGE LAYOUT -------------*/
+	
+	#wrapper{	/*--- sets up an Id called wrapper   */
+			position: relative;									/*--- sets the position  */
+			width:1200px;										/*--- sets the width   */
+			margin:auto;										/*--- sets the margin   */
+	}
+	
+	#masthead{	/*--- sets up an Id called masthead.  */
+			background-color: DodgerBlue;						/*--- applies background color*/
+			height:100px;										/*---  applies height  */
+			width:1100px;										/*---  applies width  */
+			text-align:center;									/*--- applies text alignment to center   */
+			margin:auto;										/*--- applies the margin as auto   */
+			margin-bottom:10px;									/*---  makes the bottom margin 10px  */								
+			border:solid;										/*--- makes the border outline solid   */
+			position:relative;									/*---  makes the position of masthead relative  */
+			
+	}
+
+	#nav{	/*---  sets up an Id called nav  */
+			background-color: DodgerBlue;						/*--- applies the background color    */
+			height:100px;										/*--- applies height   */
+			width:1100px;										/*--- applies width   */
+			text-align:center;									/*--- applies text alignment to center   */
+			margin:auto;										/*--- applies the margin as auto   */
+			border:solid;										/*--- makes the border outline solide   */
+			position:relative;									/*--- makes the position of nav relative   */
+			padding-bottom:1px;									/*--- makes the padding at the bottom 1px   */
+			
+	}
+	
+	#nav li{	/*--- setsup an extension from nav for library   */
+			display: inline;									/*--- sets the display to be inline   */
+			margin-left:20px;									/*--- setsup the margin of the left to be 20px   */
+			margin-right:20px;									/*--- setsup the margin of the right to be 20px  */
+			text-align:center;									/*--- setsup the text alignment to be centered   */
+	}
+	
+	#nav a{	/*--- setsup an extension from nav for hyperlinks   */
+			display:inline-block;								/*--- setups the display to be inline and blocked   */
+			text-decoration: none;								/*--- text decoration to be none   */
+	}
+	
+	
+	a:link {	/*--- setsup hyperlinks before being used   */
+		background-color: #1E90FF;								/*---  sets background colour  */
+		color:#FFFFFF;											/*---  sets text colour  */
+	}
+
+	a:visited {	/*--- setsup hyperlink format when its been visited   */
+		background-color: #1E90FF;								/*--- setsup background colour    */
+		color: #FFFFFF;											/*--- setsup text colour  */								
+	}
+	
+	a:hover {	/*--- setsups hyperlink format when its been hovered over    */
+		background-color: #A5D3FF;								/*---  setsup background colour  */
+		color: #FFFFFF;											/*---  setups colour of text  */
+		font-weight: bold; 										/*---  setsup the font weight to bold  */
+	}
+
+	a:active {	/*--- setsup hyperlink when its being used   */
+		background-color: #A5D3FF;								/*--- setsupbackground colour   */
+		color: #FFFFFF;											/*--- setsup text colour   */
+	}
+	
+	#contentright{	/*---  setsup contentright id  */
+			background-color: DodgerBlue;						/*---  applies background colour  */
+			float:right;										/*---  applies a float to right  */
+			width:700px;										/*---  applies width  */
+			padding-left:10px;									/*---  applies padding left  */
+			padding-right:10px;									/*---  applies padding right  */
+			border-style:solid;									/*---  applies border style to be solid  */
+			position:relative;									/*---  applies position and makes relative */
+			margin:auto;										/*---  margin set to auto  */
+			margin-right:48px;									/*---  margin set for right side  */
+			margin-bottom:10px;									/*---  margin set to bottom  */
+			margin-top:10px;									/*---  margin set for top  */	
+	}
+
+	.contentwhole{	/*--- setsup a contentwhole class   */
+			background-color: DodgerBlue;						/*--- setsup background colour   */
+			float:left;											/*--- setsup a float for the left side   */
+			width:1080px;										/*--- setsup width   */
+			padding-left:10px;									/*--- setsup padding left   */
+			padding-right:10px;									/*--- setsup padding right  */
+			border-style:solid;									/*--- setsup border style as solid   */
+			margin:auto;										/*--- setsup margin to be auto   */
+			margin-top:10px;									/*--- setsup margin of top  */
+			margin-left:48px;									/*--- setsup margin of left side   */
+			margin-bottom:10px;									/*--- setsup bottom margin   */
+			text-align: justify;								/*--- makes text alignment to be justified  */
+	}
+	
+	.centertext{	/*--- setsups a centertext class    */
+		text-align:center;										/*--- makes text align to the center    */
+	}
+	
+	#tips{	/*--- creates a tips id   */
+		background-color: DodgerBlue;							/*--- setsup background colour   */
+		float:left;												/*--- setsup float to left   */
+		width:344px;											/*--- setups width   */
+		padding-left:10px;										/*--- setups padding left   */
+		padding-right:10px;										/*--- setsups padding right   */
+		border-style:solid;										/*--- setups border to be solid   */
+		position:relative;										/*--- setups postion to be relative   */
+		margin:auto;											/*--- setsups margin to be auto   */
+		margin-left:48px;										/*--- setups margin of left   */
+		margin-top:10px;										/*--- setups margin of the top   */
+		margin-bottom:10px;										/*--- setsup margin of the bottom   */
+		text-align: justify;									/*--- makes text alignmnet to be justified   */
+	}
+	
+	#logo{/*--- setsup a logo id    */
+		float: left; 											/*---  places a float to the left  */
+	}
+	
+	#fitnesswellbeing{/*--- setsup a fitnesswellbeing id    */
+		float: right;											/*--- places a float to the right    */
+		margin:0 0 10px 20px;									/*--- creats the margin sizes for each side   */
+	}
+	
+	h2.header2{	/*--- setsup a div extension from h2 tag   */
+		text-align:center;										/*--- text aligned to the center   */
+		}
+	
+	
+	h3.header3{	/*--- setsup a div extension from h3 tag   */
+		text-align:center;										/*--- text aligned to the center   */
+		}
+	
+	h4.minihead{	/*--- setsup div extension from h4 tag    */
+		text-align:center;										/*---  text aligned to the center  */
+		}
+
+	#footer{	/*--- footer id created   */
+			clear:both;											/*---  makes the section cleared  */
+			background-color: DodgerBlue;						/*---  states background colour  */
+			padding-left:10px;									/*---  states the padding for left  */
+			padding-right:10px;									/*---  states the padding for right  */
+			position:relative;									/*---  states the position of footer to be relative  */
+			text-align: left;									/*---  states the text alignment to be to the left  */
+			width:1080px;										/*---  states the width  */
+			height:90px;										/*---  states the height */
+			border:solid;										/*---  setsup the border to be solid  */
+			margin:auto;										/*---  setsup the margin as auto  */
+			margin-top:10px;									/*---  setsup the margin of the top  */
+			font-size:small;									/*---  setsup the font size to be small  */
+			line-height:200%;									/*---  setsup the line height to be 200% larger  */
+	}
+		
+	#footer p{	/*--- setsup an extension of footer for the paragraphs   */
+			margin:0;											/*--- sets the margin of paragraphs in footer    */
+	}
+
+	#top{	/*--- setsup a top id   */
+	line-height:200%											/*---   setsup the line height to be 200% larger  */
+	}
+	
+	#youtube{	/*--- setsup a youtube id    */
+	display: block;												/*--- displayed in a block    */
+	margin: 0 auto;												/*--- setsup margin to be auto   */
+	}
+	
+	img.centered{	/*--- setsup an extension of images to be centered  */
+    display: block;												/*---  display to be block  */
+    margin-left: auto;											/*--- margin to be auto on left   */
+    margin-right: auto;											/*--- margin to be auto on the right  */
+	}
+	
+	ul {	/*--- states what the ul tag will entail   */
+    list-style-type: square;									/*---  makes the bullet points squared  */
+	color: #FFFFFF;												/*---  states the colour  */
+	line-height:200%;											/*---  states the line height to be 200%  */
+	}
+		
